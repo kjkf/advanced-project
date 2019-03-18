@@ -1,0 +1,50 @@
+.skill {
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+
+.skill__shape {
+	transform: rotate(-180deg);
+}
+
+.skill__circle {
+	fill: transparent;
+	stroke: #eaeaea;
+	stroke-width: 12px;
+}
+
+.skill__circle--above {
+	stroke: url("#linearGradient");
+	stroke-width: 24px;
+	stroke-dasharray: 565;
+	stroke-dashoffset: 565;
+	animation: fill 100s linear infinite;
+	animation-play-state: paused;
+}
+
+@keyframes fill {
+	from {
+		stroke-dashoffset: 565;
+	}
+
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.skill__title {
+	font-family: 'OpenSansBold', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 48px;
+	opacity: .5;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+//stroke-dasharray
+//stroke-dashoffset
