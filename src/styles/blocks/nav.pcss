@@ -11,12 +11,7 @@
 		margin-right: 0;
 	}
 
-	&:hover {
-		//text-decoration: underline;
-		font-weight: bolder;
-	}
-
-	&:focus {
+	&:hover, &:focus {
 		//text-decoration: underline;
 		font-weight: bolder;
 	}
@@ -40,4 +35,22 @@
 	font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
+
+
+	&:hover, &:focus {
+		//text-decoration: underline;
+		font-weight: bolder;
+	}
+
+	&:active {
+		color: $main-color;
+		border-bottom: 2px solid $main-color;
+    
+	}
+
+	&.active {
+		color: $main-color;
+		border-bottom: 2px solid $main-color;
+    
+	}
 }
