@@ -15,4 +15,13 @@
 		right: -25px;
 		top: 4px;
  	}
+
+ 	&:focus, &:hover {
+		font-weight: 600;
+		color: $focus-color;
+
+ 		&:after {
+	 		background: svg-load('scroll.svg', fill=$focus-color, width=100%, height=100%) 0 0 no-repeat;
+	 	}
+ 	}
 }
