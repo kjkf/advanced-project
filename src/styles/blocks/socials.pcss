@@ -20,9 +20,18 @@
 				fill: #63656c;
 			}
 
-			&:hover {
+			&:hover, &:focus {
 				.socials__icon {
 					fill: $main-color;
+				}
+			}
+
+			&:active {
+				border: 1px solid $main-color; 
+				
+				.socials__icon {
+					fill: $main-color;
+					stroke: red;
 				}
 			}
 		}
@@ -42,9 +51,16 @@
 	height: 31px;
 	display: block;
 
-	&:hover {
+	&:hover, &:focus {
 		.socials__icon {
 			fill: $href-color;
+		}
+	}
+
+	&:active {
+		.socials__icon {
+			fill: $main-color;
+			stroke: red;
 		}
 	}
 }

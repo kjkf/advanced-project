@@ -1,25 +1,3 @@
-/* .reviews__slider-controls {
-	&:before, &:after {
-		content: ">";
-		display: inline-block;
-		padding: 10px 15px;
-		border-radius: 50%;
-		border: 1px solid $text-color;
-		opacity: .5;
-
-		&:hover {
-			background: $main-color;
-		}
-	}
-
-	&:before {
-		content: "<";
-		margin-right: 20px;
-	}
-
-
-} */
-
 .reviews__slider-controls-left, .reviews__slider-controls-right {
 	display: inline-block;
 	padding: 10px 15px;
@@ -28,10 +6,18 @@
 	opacity: .5;
 	font-weight: 700;
 
-	&:hover {
+	&:hover, &:focus {
+		background: #d1c1ee;
 		border-color: $main-color;
 		color: $main-color;
+		font-weight: 900;
 		cursor: pointer;
+	}
+
+	&:active {
+		border: 3px solid $main-color;
+		color: $main-color;
+		font-weight: 900;
 	}
 }
 
